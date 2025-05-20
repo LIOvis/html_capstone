@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <title>Twenty Twenty-Two - Elements</title>
   </head>
   <body style="margin-top: 0px; margin-left: 0px; margin-right: 0px">
@@ -89,14 +92,108 @@
             <fieldset>
               <legend>Legend</legend>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.<br><h2>Form Element</h2><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
-              <form></form>
+              <form>
+                <p><div class="field-wrapper" id="form-text-field">
+                  <label for="text">Text Field:<br></label>
+                  <input id="text" name="text" type="text">
+                </div>
+                <br>
+                <div class="field-wrapper" id="form-text-area-field">
+                  <label for="text-area">Text Area:<br></label>
+                  <textarea name="text-area" id="text-area" rows="2"></textarea>
+                </div>
+                <br>
+                <div class="field-wrapper" id="form-select-field">
+                  <label for="select">Select Element:<br></label>
+                  <select name="select">
+                    <optgroup label="Option Group 1">
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </optgroup>
+                    <optgroup label="Option Group 2">
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <br>
+                <div class="field-wrapper" id="form-radio-field">
+                  <label for="radio">Radio Buttons:<br><br></label>
+                  <input name="radio" id="radio1" type="radio" value="radio1">
+                  <label for="radio1">Radio 1<br></label>
+                  <input name="radio" id="radio2" type="radio" value="radio2">
+                  <label for="radio2">Radio 2<br></label>
+                  <input name="radio" id="radio3" type="radio" value="radio3">
+                  <label for="radio3">Radio 3<br></label>
+                </div>
+                <br>
+                <div class="field-wrapper" id="form-checkbox-field">
+                  <label for="checkbox">Checkboxes:<br><br></label>
+                  <input name="checkbox" id="checkbox1" type="checkbox" value="checkbox1">
+                  <label for="checkbox1">Checkbox 1<br></label>
+                  <input name="checkbox" id="checkbox2" type="checkbox" value="checkbox2">
+                  <label for="checkbox2">Checkbox 2<br></label>
+                  <input name="checkbox" id="checkbox3" type="checkbox" value="checkbox3">
+                  <label for="checkbox3">Checkbox 3<br></label>
+                </div>
+                <br>
+                <div class="field-wrapper" id="form-password-field">
+                  <label for="password">Password:<br></label>
+                  <input id="password" name="password" type="password">
+                </div>
+                <br>
+                <div class="field-wrapper" id="form-file-field">
+                  <label for="file">File Input:<br></label>
+                  <input id="file" name="file" type="file">
+                </div>
+                <br>
+                <div class="field-wrapper" id="form-button-field">
+                  <input class="button" type="reset" value="Clear">
+                  <input class="button" type="submit" value="Submit">
+                </div></p>
+              </form>
             </fieldset>
-            <p><br><br><small><a class="class4" href="#article-elements">[top]</a></small></p>
+            <p><small><a class="class4" href="#article-elements">[top]</a></small></p>
           </div>
           <hr class="class2">
           <div class="p-wrapper">
-            <h2>Tables</h2>
-            <p><br><br><small><a class="class4" href="#article-elements">[top]</a></small></p>
+            <p><h2>Tables</h2>
+            <table align="center">
+              <thead>
+                <tr>
+                  <th scope="col">Table Header 1</th>
+                  <th scope="col">Table Header 2</th>
+                  <th scope="col">Table Header 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Division 1</td>
+                  <td>Division 2</td>
+                  <td>Division 3</td>
+                </tr>
+                <tr>
+                  <td>Division 1</td>
+                  <td>Division 2</td>
+                  <td>Division 3</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Division 1</td>
+                  <td>Division 2</td>
+                  <td>Division 3</td>
+                </tr>
+              </tfoot>
+            </table>
+            </p>
+            <p><br><small><a class="class4" href="#article-elements">[top]</a></small></p>
+          </div>
+          <hr class="class2">
+          <div class="p-wrapper">
+            <p><h2>Misc Stuff – abbr, acronym, pre, code, sub, sup, etc.</h2></p>
           </div>
         </div>
         <div class="spacer"></div>
