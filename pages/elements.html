@@ -3,42 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <title>Twenty Twenty-Two - Elements</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+      .source-serif-4 {
+        font-family: "Source Serif 4", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+      }
+      a:link,
+      a:visited,
+      a:active {
+        background-color: transparent;
+        text-decoration: none;
+        color: #000000;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Source Serif 4", Georgia;
+        font-weight: 200;
+      }
+    </style>
   </head>
-  <body style="margin-top: 0px; margin-left: 0px; margin-right: 0px">
+  <body style="margin: 0px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;">
     <div class="page" id="elements">
-      <div class="field-wrapper" id="header-elements">
-        <header>
-          <div class="nav-bar">
-            <div class="text">
-              <br />
-              <p>
-                <a class="class2" href="../index.html"
-                  ><em>Twenty Twenty-Two</em></a
-                >
-              </p>
-            </div>
-            <div></div>
-            <div class="text">
-              <br />
-              <p align="right"><a class="class2" href="">About</a></p>
-            </div>
-            <div class="text">
-              <br />
-              <p align="center"><a class="class2" href="">Parent Page</a></p>
-            </div>
-            <br /><br />
+      <header
+        class="field-wrapper"
+        id="header-elements">
+        <div class="nav-bar" id="elements-page-nav">
+          <br>
+          <div class="right-nav" style="float: left;">
+            <a class="class1" href="../index.html" 
+          ><em>&emsp;Twenty Twenty-Two</em></a
+            >
           </div>
-        </header>
-      </div>
+          <div class="left-nav" align="right" width="100px" style="float: right;">
+              <span><a class="class1" href="">About&emsp;</a></span>
+              <span><a class="class1" href="">Parent Page&emsp;</span>
+          </div>
+        </div>
+      </header>
       <div class="field-wrapper" id="article-elements">
         <div class="text">
           <br />
-          <h2>Elements</h2>
+          <h2 style="font-size: 44px;">&ensp;Elements</h2>
           <br />
           <hr class="class1" />
           <br />
@@ -48,118 +64,125 @@
         <div class="body-text">
           <div class="p-wrapper">
           <p>
-            The purpose of this HTML is to help determine what default settings
+            &emsp;The purpose of this HTML is to help determine what default settings
             are with CSS and to make sure that all possible HTML Elements are
             included in this HTML so as to not miss any possible Elements when
             designing a site.
           </p>
-          <br /></div>
+          <br />
+          </div>
           <hr class="class2" />
-          <div class="p-wrapper">
-          <p><h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>HEADING 5</h5>
-          <h6>HEADING 6</h6>
-          <small><a class="class4" href="#article-elements">[top]</a></small>
-          <br></p>
-          <hr class="class2">
-          <p><h2>Paragraph</h2></p>
-          <p>Lorem ipsum dolor sit amet, <a class="class5" href="#article-elements">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-          
-          <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.<br><br><small><a class="class4" href="#article-elements">[top]</a></small></p>
+          <div class="p-wrapper" id="headings-p">
+            <p>
+              <h1 align="left" style="font-size: 52px;">&ensp;Heading 1</h1>
+              <h2 align="left" style="font-size: 44px;">&ensp;Heading 2</h2>
+              <h3 align="left" style="font-size: 36px;">&ensp;Heading 3</h3>
+              <h4 align="left" style="font-size: 28px;">&emsp;Heading 4</h4>
+              <h5 align="left" style="font-size: 18px;">&emsp;&ensp;HEADING 5</h5>
+              <h6 align="left" style="font-weight: 300 ;font-size: 18px;">&emsp;&ensp;HEADING 6</h6>
+              <small><a class="class4" href="#article-elements">&emsp;&ensp;[top]</a></small>
+              <br>
+            </p>
           </div>
           <hr class="class2">
-          <div class="p-wrapper">
-            <p><h2>List Types</h2>
-            <h3>Definition List</h3>
-            <dl><dt>Definition List Title</dt>
-            <dd>This is a definition list division.</dd></dl>
-            <h3>Ordered List</h3>
+          <div class="p-wrapper" id="paragraph-p">
+            <p><h2 style="font-size: 44px;">&ensp;Paragraph</h2></p>
+            <p>&emsp;Lorem ipsum dolor sit amet, <a class="class5" href="#article-elements">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+          
+            <p>&emsp;Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.<br><br><small><a class="class4" href="#article-elements">&emsp;&ensp;[top]</a></small></p>
+          </div>
+          <hr class="class2">
+          <div class="p-wrapper" id="list-p">
+            <p><h2 style="font-size: 44px;">&ensp;List Types</h2>
+            <h3>&emsp;Definition List</h3>
+            <dl><dt>&emsp;&ensp;Definition List Title</dt>
+            <dd>&emsp;&ensp;This is a definition list division.</dd></dl>
+            <h3>&emsp;Ordered List</h3>
             <ol><li>List Item 1</li>
             <li>List Item 2</li>
             <li>List Item 3</li></ol>
-            <h3>Unordered List</h3>
+            <h3>&emsp;Unordered List</h3>
             <ul><li>List Item 1</li>
             <li>List Item 2</li>
             <li>List Item 3</li></ul>
-            <br><small><a class="class4" href="#article-elements">[top]</a></small></p>
+            <br><small><a class="class4" href="#article-elements">&emsp;&ensp;[top]</a></small></p>
           </div>
           <hr class="class2">
-          <div class="p-wrapper">
-            <h2>Forms</h2>
+          <div class="p-wrapper" id="form-p">
+            <h2 style="font-size: 44px;">&ensp;Forms</h2>
             <fieldset>
               <legend>Legend</legend>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.<br><h2>Form Element</h2><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+              <p>&emsp;&ensp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.<br><h2 style="font-size: 44px;">&ensp;Form Element</h2><br>&emsp;&ensp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
               <form>
-                <p><div class="field-wrapper" id="form-text-field">
-                  <label for="text">Text Field:<br></label>
-                  <input id="text" name="text" type="text">
-                </div>
-                <br>
-                <div class="field-wrapper" id="form-text-area-field">
-                  <label for="text-area">Text Area:<br></label>
-                  <textarea name="text-area" id="text-area" rows="2"></textarea>
-                </div>
-                <br>
-                <div class="field-wrapper" id="form-select-field">
-                  <label for="select">Select Element:<br></label>
-                  <select name="select">
-                    <optgroup label="Option Group 1">
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </optgroup>
-                    <optgroup label="Option Group 2">
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </optgroup>
-                  </select>
-                </div>
-                <br>
-                <div class="field-wrapper" id="form-radio-field">
-                  <label for="radio">Radio Buttons:<br><br></label>
-                  <input name="radio" id="radio1" type="radio" value="radio1">
-                  <label for="radio1">Radio 1<br></label>
-                  <input name="radio" id="radio2" type="radio" value="radio2">
-                  <label for="radio2">Radio 2<br></label>
-                  <input name="radio" id="radio3" type="radio" value="radio3">
-                  <label for="radio3">Radio 3<br></label>
-                </div>
-                <br>
-                <div class="field-wrapper" id="form-checkbox-field">
-                  <label for="checkbox">Checkboxes:<br><br></label>
-                  <input name="checkbox" id="checkbox1" type="checkbox" value="checkbox1">
-                  <label for="checkbox1">Checkbox 1<br></label>
-                  <input name="checkbox" id="checkbox2" type="checkbox" value="checkbox2">
-                  <label for="checkbox2">Checkbox 2<br></label>
-                  <input name="checkbox" id="checkbox3" type="checkbox" value="checkbox3">
-                  <label for="checkbox3">Checkbox 3<br></label>
-                </div>
-                <br>
-                <div class="field-wrapper" id="form-password-field">
-                  <label for="password">Password:<br></label>
-                  <input id="password" name="password" type="password">
-                </div>
-                <br>
-                <div class="field-wrapper" id="form-file-field">
-                  <label for="file">File Input:<br></label>
-                  <input id="file" name="file" type="file">
-                </div>
-                <br>
-                <div class="field-wrapper" id="form-button-field">
-                  <input class="button" type="reset" value="Clear">
-                  <input class="button" type="submit" value="Submit">
-                </div></p>
+                <p>
+                  <div class="field-wrapper" id="form-text-field">
+                    <label for="text">Text Field:<br></label>
+                    <input id="text" name="text" type="text">
+                  </div>
+                  <br>
+                  <div class="field-wrapper" id="form-text-area-field">
+                    <label for="text-area">Text Area:<br></label>
+                    <textarea name="text-area" id="text-area" rows="2"></textarea>
+                  </div>
+                  <br>
+                  <div class="field-wrapper" id="form-select-field">
+                    <label for="select">Select Element:<br></label>
+                    <select name="select">
+                      <optgroup label="Option Group 1">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </optgroup>
+                      <optgroup label="Option Group 2">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <br>
+                  <div class="field-wrapper" id="form-radio-field">
+                    <label for="radio">Radio Buttons:<br><br></label>
+                    <input name="radio" id="radio1" type="radio" value="radio1">
+                    <label for="radio1">Radio 1<br></label>
+                    <input name="radio" id="radio2" type="radio" value="radio2">
+                    <label for="radio2">Radio 2<br></label>
+                    <input name="radio" id="radio3" type="radio" value="radio3">
+                    <label for="radio3">Radio 3<br></label>
+                  </div>
+                  <br>
+                  <div class="field-wrapper" id="form-checkbox-field">
+                    <label for="checkbox">Checkboxes:<br><br></label>
+                    <input name="checkbox" id="checkbox1" type="checkbox" value="checkbox1">
+                    <label for="checkbox1">Checkbox 1<br></label>
+                    <input name="checkbox" id="checkbox2" type="checkbox" value="checkbox2">
+                    <label for="checkbox2">Checkbox 2<br></label>
+                    <input name="checkbox" id="checkbox3" type="checkbox" value="checkbox3">
+                    <label for="checkbox3">Checkbox 3<br></label>
+                  </div>
+                  <br>
+                  <div class="field-wrapper" id="form-password-field">
+                    <label for="password">Password:<br></label>
+                    <input id="password" name="password" type="password">
+                  </div>
+                  <br>
+                  <div class="field-wrapper" id="form-file-field">
+                    <label for="file">File Input:<br></label>
+                    <input id="file" name="file" type="file">
+                  </div>
+                  <br>
+                  <div class="field-wrapper" id="form-button-field">
+                    <input class="button" type="reset" value="Clear">
+                    <input class="button" type="submit" value="Submit">
+                  </div>
+                </p>
               </form>
             </fieldset>
-            <p><small><a class="class4" href="#article-elements">[top]</a></small></p>
+            <p><small><a class="class4" href="#article-elements">&emsp;&ensp;[top]</a></small></p>
           </div>
           <hr class="class2">
           <div class="p-wrapper">
-            <p><h2>Tables</h2>
+            <p><h2 style="font-size: 44px;">&ensp;Tables</h2>
             <table align="center">
               <thead>
                 <tr>
@@ -189,12 +212,12 @@
               </tfoot>
             </table>
             </p>
-            <p><br><small><a class="class4" href="#article-elements">[top]</a></small></p>
+            <p><br><small><a class="class4" href="#article-elements">&emsp;&ensp;[top]</a></small></p>
           </div>
           <hr class="class2">
-          <div class="p-wrapper">
-            <p><h2>Misc Stuff – abbr, acronym, pre, code, sub, sup, etc.</h2><br>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <abbr title="Avenue">AVE</abbr></p>
-            <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. 
+          <div class="p-wrapper" id="misc-p">
+            <p><h2 style="font-size: 44px;">&ensp;Misc Stuff – abbr, acronym, pre, code, sub, sup, etc.</h2><br>&emsp;&ensp;Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <abbr title="Avenue">AVE</abbr></p>
+            <pre>&emsp;&ensp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. 
 Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. 
 Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. 
 Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> 
@@ -202,49 +225,57 @@ Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nu
 <abbr title="Avenue">AVE</abbr>
               </pre>
               <blockquote><p>
-                “This stylesheet is going to help so freaking much.”<br>
-              -Blockquote</p></blockquote>
-              <p><br><small><a class="class4" href="#article-elements">[top]</a></small></p>
+                &emsp;&ensp;“This stylesheet is going to help so freaking much.”<br>
+                &emsp;&ensp;&emsp;&ensp;&emsp;-Blockquote</p></blockquote>
+              <p><br><small><a class="class4" href="#article-elements">&emsp;&ensp;[top]</a></small></p>
             </div>
+          <br>
+          <br>
+          <br>
+          <br>
         </div>
-        <div class="spacer"></div>
         <div class="article-footer">
-          <div class="article-footer-text">
-            <p><em>May 19, 2025</em></p>
+          <table align="center">
+            <tr> 
+              <td class="article-footer-text">
+              <p>&emsp;&emsp;&emsp;&emsp;<em>May 19, 2025</em>&emsp;&emsp;&emsp;&emsp;</p>
+              </td>
+              <td class="article-footer-text"><p>&emsp;&emsp;&emsp;&emsp;Theme Admin&emsp;&emsp;&emsp;&emsp;</p></td>
+              <td class="article-footer-text">
+                <p><a class="class4" href="">&emsp;&emsp;&emsp;&emsp;Uncategorized&emsp;&emsp;&emsp;&emsp;&emsp;</a></p>
+              </td>
+            </tr>
+          </table>
+          <div class="text">
+            <br />
+            <br />
+            <hr class="class1" />
+            <br />
           </div>
-          <div class="article-footer-text"><p>Theme Admin</p></div>
-          <div class="article-footer-text">
-            <p><a class="class4" href="">Uncategorized</a></p>
-          </div>
-        </div>
-        <div class="text">
-          <br />
-          <br />
-          <hr class="class1" />
-          <br />
         </div>
       </div>
-    </div>
-    <div class="spacer"></div>
-    <div class="field-wrapper" id="footer-home">
-      <footer>
-        <div class="footer" id="footer-home">
-          <div class="text">
+      <br>
+      <br>
+      <br>
+      <br>
+      <footer class="field-wrapper" id="footer-elements">
+        <div class="footer" id="footer-elements">
+          <div class="text" style="float: left;">
             <p>
-              <a class="class2" href="index.html"><em>Twenty Twenty-Two</em></a>
+              <a class="class2" href="../index.html">&emsp;<em>Twenty Twenty-Two</em></a>
             </p>
           </div>
-          <div class="text">
+          <div class="text" style="float:right;">
             <p align="right">
               Proudly powered by
-              <a class="class4" href="https://github.com/LIOvis">Lio</a>
-            </p>
+              <a class="class4" href="https://github.com/LIOvis"><u>Lio</u></a>
+            &emsp;</p>
           </div>
         </div>
         <br />
         <br />
       </footer>
-      </div>
-    </body>
-    </html>
+    </div>
+  </body>
+</html>
     
